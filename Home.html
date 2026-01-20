@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben 10</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="stylesheet" href="Home.css" />
+    
+  </head>
+
+
+  <body>
+
+
+    <!-- Root app container with static HTML markup -->
+    <div id="root">
+      <div id="app">
+        <header class="navbar">
+          <div class="logo"><img src="images/logo.png" alt="Ben 10 Logo" /></div>
+
+          <ul class="nav-links">
+            <li>Home</li>
+            <li>Aliens</li>
+            <li>Episodes</li>
+            <li>Games</li>
+            <li>About</li>
+          </ul>
+
+          <div class="nav-buttons">
+            <button class="btn btn-outline">Login</button>
+            <button class="btn btn-fill">Sign Up</button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="alien-slider" id="alien-slider">
+            <div class="alien-card"><img src="images/alien1.png" alt="Alien 1"></div>
+            <div class="alien-card"><img src="images/alien2.png" alt="Alien 2"></div>
+            <div class="alien-card"><img src="images/alien3.png" alt="Alien 3"></div>
+            <div class="alien-card"><img src="images/alien4.png" alt="Alien 4"></div>
+            <div class="alien-card"><img src="images/alien5.png" alt="Alien 5"></div>
+          </div>
+        </section>
+
+        <section class="slider" id="main-slider">
+          <button class="arrow left-arrow" id="left-btn" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="slider-images" id="slider-images">
+            <img class="alien-img" src="images/slider4.png" alt="Swampfire">
+            <img class="alien-img" src="images/slider6.png" alt="Humungousaur">
+            <img class="alien-img" src="images/slider1.png" alt="Big Chill">
+            <img class="alien-img" src="images/slider2.png" alt="Echo Echo">
+            <img class="alien-img" src="images/slider5.png" alt="Chromastone">
+            <img class="alien-img" src="images/slider3.png" alt="Rath">
+          </div>
+
+          <button class="arrow right-arrow" id="right-btn" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="slider-info-wrapper">
+            <div class="slider-info" id="slider-info">
+              <h1 id="slider-title">Swampfire</h1>
+              <p id="slider-desc">A methane-based alien with plant powers and the ability to ignite flames.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  <script src="Home.js"></script>
+  
+  </body>
+</html>
